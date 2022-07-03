@@ -4,25 +4,30 @@ obj:
 # fast turn around on feature changes
 # less distruptive
 
-comparison
-version control:
-        github -> code commit
-repository for dependencies:
-        sonatype nexus -> code artifact
-build services:
-        maven (jenkins job) -> code build
-artifact deployment:
-        jenkins -> code deploy (deploy to s3/beanstalk env)
-code qaulity check:
-        sonarqube server -> sonarcloud (not from aws)
-quality check:
-        checkstyle -> checkstyle
-software testing:
-        selenium -> selenium
-application host (paas for app hosting and db):
-        tomcat on ec2 instances -> beanstalk
-        mysql on ec2 instance -> amazon rds (db for app service)
-pipeline:
-        jenkins -> code pipeline (to integrate all the jobs together)
+# comparison
+# version control:
+#         github -> code commit
+# repository for dependencies:
+#         sonatype nexus -> code artifact
+# build services:
+#         maven (jenkins job) -> code build
+# artifact deployment:
+#         jenkins -> code deploy (deploy to s3/beanstalk env)
+# code qaulity check:
+#         sonarqube server -> sonarcloud (not from aws)
+# quality check:
+#         checkstyle -> checkstyle
+# software testing:
+#         selenium -> selenium
+# application host (paas for app hosting and db):
+#         tomcat on ec2 instances -> beanstalk
+#         mysql on ec2 instance -> amazon rds (db for app service)
+# pipeline:
+#         jenkins -> code pipeline (to integrate all the jobs together)
 
+Procedures:
 
+on aws acct, go to codecomit
+create a repository 'kpro-code-repo' ( u can enable amazon code guru for code quality improvement--optional)
+repo can be accessed by http or ssh connection (follow the steps given on aws) use ssh which is prefer method, http will
+expose pw which can undermine the security.
