@@ -1,0 +1,28 @@
+obj:
+# No/less ops overhead
+# short mttr
+# fast turn around on feature changes
+# less distruptive
+
+comparison
+version control:
+        github -> code commit
+repository for dependencies:
+        sonatype nexus -> code artifact
+build services:
+        maven (jenkins job) -> code build
+artifact deployment:
+        jenkins -> code deploy (deploy to s3/beanstalk env)
+code qaulity check:
+        sonarqube server -> sonarcloud (not from aws)
+quality check:
+        checkstyle -> checkstyle
+software testing:
+        selenium -> selenium
+application host (paas for app hosting and db):
+        tomcat on ec2 instances -> beanstalk
+        mysql on ec2 instance -> amazon rds (db for app service)
+pipeline:
+        jenkins -> code pipeline (to integrate all the jobs together)
+
+
