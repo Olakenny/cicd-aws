@@ -1,4 +1,4 @@
-obj:
+# obj:
 # No/less ops overhead
 # short mttr
 # fast turn around on feature changes
@@ -25,9 +25,9 @@ obj:
 # pipeline:
 #         jenkins -> code pipeline (to integrate all the jobs together)
 
-Procedures:
+# Procedures:
 
-on aws acct, go to codecomit
-create a repository 'kpro-code-repo' ( u can enable amazon code guru for code quality improvement--optional)
-repo can be accessed by http or ssh connection (follow the steps given on aws) use ssh which is prefer method, http will
-expose pw which can undermine the security.
+# on aws acct, go to codecomit
+# create a repository 'kpro-code-repo' ( u can enable amazon code guru for code quality improvement--optional)
+# repo can be accessed by http or ssh connection (follow the steps given on aws) use ssh which is prefer method, http will
+# expose pw which can undermine the security.
